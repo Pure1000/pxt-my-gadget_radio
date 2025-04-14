@@ -1,4 +1,13 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="pxt-on-start"></block>
-  <block type="device_forever"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="RadioMessage" id="34ZN+03h^hSk}:7Id*7X">0message1</variable><variable type="RadioMessage" id="5+8cw],j#gm@2i#S70.}">0message2</variable></variables><block type="device_forever" id="SN}d.r}#~a;dL8KVj8`w" x="343" y="17"><statement name="HANDLER"><block type="device_show_leds" id="(Ql2w_j#DS/[Mkmlk;+["><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . . . . . 
+        . . # . .
+        `</field></block></statement></block><block type="pxt-on-start" id="j#+LCSW[7Yv%m}^k.,;u" x="32" y="52"><statement name="HANDLER"><block type="radio_set_group" id="J:pn`mpgG0UBFzMt=pZe"><value name="ID"><shadow type="math_number_minmax" id="r1*o-Vad=|ESl~;8+rew"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">1</field></shadow></value><next><block type="radio_set_transmit_power" id="wN:*9v_Po$62osn`}(6w"><value name="power"><shadow type="math_number_minmax" id="}hegUC5O/0cO5;HX]:[!"><mutation min="0" max="7" label="Power" precision="0"></mutation><field name="SLIDER">7</field></shadow></value></block></next></block></statement></block><block type="device_button_event" id="L/eKbhB~fbREitfR8U20" x="582" y="35"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="record_startRecording" id="q/B=.G.U63bpc%%e+|;g"><field name="mode">record.BlockingState.Blocking</field><next><block type="radioBroadcastMessage" id="7XaVo%+ZC;[aHe_XSL-M"><value name="msg"><shadow type="radioMessageCode" id="??rzH6GPbAz6{{SwH^a/"><field name="MEMBER">message1</field></shadow></value></block></next></block></statement></block><block type="device_button_event" id="DM%#;ILs#8|%nExzzk}(" x="944" y="39"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="radioBroadcastMessage" id="Snj?_Hdv*|e7*t}:#)OM"><value name="msg"><shadow type="radioMessageCode" id="_}Sz2n)5G!H}/Y|^TVf-"><field name="MEMBER">0message2</field></shadow></value></block></statement></block><block type="radioOnMessageReceived" id="+]cj2*~s#_iIc[5O,Wdm" x="953" y="209"><value name="msg"><shadow type="radioMessageCode" id="l~;`-c9sh*v_r?F)KFVu"><field name="MEMBER">0message2</field></shadow></value><statement name="HANDLER"><block type="device_print_message" id="rZcee_sQLaz?tLGeo1:p"><value name="text"><shadow type="text" id="G(aq+aVIf0$Y?aA*jTZK"><field name="TEXT">Quieres ser mi amigo.</field></shadow></value></block></statement></block><block type="radioOnMessageReceived" id="k$(h$dU0_/F9t9s)a|rR" x="599" y="261"><value name="msg"><shadow type="radioMessageCode" id="!~J9%|I`2,5XP)a_t6-M"><field name="MEMBER">message1</field></shadow></value><statement name="HANDLER"><block type="device_show_leds" id="Uv?i^iAVEt3;KvNFio[]"><field name="LEDS">`
+        . # . . # 
+        . . # . . 
+        # . # . . 
+        . . # . . 
+        . # . . #
+        `</field><next><block type="record_playAudio" id="P^|{{M6-auO#Sm]u1t5F"><field name="mode">record.BlockingState.Blocking</field></block></next></block></statement></block></xml>

@@ -5,7 +5,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "audio-recording": "*",
+        "radio-broadcast": "*"
     },
     "files": [
         "README.md",
